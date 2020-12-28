@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+import React from "react";
 import './App.css';
+import Video from "./Video";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Video 
+        url='http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4'
+        channel='Munya.denhere.4'
+        description='Best series'
+        song='Game of THrones'
+        likes={111}
+        messages={222}
+        shares={333}/>
+  
     </div>
   );
 }
